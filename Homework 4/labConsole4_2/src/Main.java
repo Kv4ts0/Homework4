@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args){
-        ClassA classA = new ClassA();
-        classA.method1();
-        classA.method2();
-        classA.method3();
-        classA.method4();
-        classA.method5();
-        classA.method6();
-        classA.method7();
+        InterfaceA inA = new ClassA();
+        inA.method1();
+        inA.method2();
+        inA.method3();
+        inA.method4();
+        inA.method5();
+        inA.method6();
+        inA.method7();
     }
 }
