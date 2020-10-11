@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Collections;
 
-public class ClassA {
+public class ClassA implements InterfaceA {
 
     int a;
     int b;
@@ -13,17 +13,21 @@ public class ClassA {
     List<Integer> nonZero = new ArrayList<>();
     List<Integer> noneZero = new ArrayList<>();
     int SumofnoneZero = 0;
+    @Override
     public void method1(){
         Random random = new Random();
         a = random.nextInt(25 - 10) + 10;
         b = random.nextInt(25 - 10) + 10;
     }
+    @Override
     public void method2(){
         System.out.println("The value of a: " + a + "\nThe value of b: " + b);
     }
+    @Override
     public void method3(){
         System.out.println("Symbols of a and b: " + a + " " + b);
     }
+    @Override
     public void method4() {
         Random rand = new Random();
         for (int i = 0; i < m.length; i++){
@@ -31,6 +35,7 @@ public class ClassA {
         }
         System.out.println(Arrays.toString(m));
     }
+    @Override
     public void method5() {
         for (Integer integer : m) {
             if (integer % 2 == 0) {
@@ -39,6 +44,7 @@ public class ClassA {
         }
         System.out.println("The Even numbers of an array are: " + Even);
     }
+    @Override
     public void method6(){
         for (Integer integer : m) {
             if (integer > 0) {
@@ -51,6 +57,7 @@ public class ClassA {
         System.out.println("Sum of nonezero elements " + SumofnoneZero);
 
     }
+    @Override
     public void method7(){
         int min = Collections.min(noneZero);
         System.out.println("The min number of nonezero array is : " + min);
